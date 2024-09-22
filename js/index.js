@@ -5,16 +5,16 @@ document.getElementById("first-btn").addEventListener("click",function(){
 
    
 
-    let main_amount =document.getElementById("main-amount").innerText
-    let main_amount_f =parseFloat(main_amount)
+    // let main_amount =document.getElementById("main-amount").innerText
+    let main_amount_f = getTextFieldValueById("main-amount")
 
-    let first_input=document.getElementById("first-input").value
+    // let first_input=document.getElementById("first-input").value
 
-    let first_input_N =parseFloat(first_input)
+    let first_input_N =getInputFieldValueById("first-input")
 
-    let first_donate=document.getElementById("first-donate").innerText
+    // let first_donate=document.getElementById("first-donate").innerText
 
-    let first_donate_N=parseFloat(first_donate)
+    let first_donate_N= getTextFieldValueById("first-donate")
 
     if(first_input_N <=0 || isNaN(first_input_N)){
 
@@ -85,16 +85,17 @@ document.getElementById("sec-btn").addEventListener("click",function(){
 
    
 
-    let main_amount =document.getElementById("main-amount").innerText
-    let main_amount_f =parseFloat(main_amount)
+    // let main_amount =document.getElementById("main-amount").innerText
 
-    let sec_input=document.getElementById("sec-input").value
+    let main_amount_f =getTextFieldValueById("main-amount")
 
-    let sec_input_N =parseFloat(sec_input)
+    // let sec_input=document.getElementById("sec-input").value
 
-    let sec_donate=document.getElementById("sec-donate").innerText
+    let sec_input_N =getInputFieldValueById("sec-input")
 
-    let sec_donate_N=parseFloat(sec_donate)
+    // let sec_donate=document.getElementById("sec-donate").innerText
+
+    let sec_donate_N=getTextFieldValueById("sec-donate")
 
     if(sec_input_N <=0 || isNaN(sec_input_N)){
 
@@ -165,16 +166,16 @@ document.getElementById("th-btn").addEventListener("click",function(){
 
    
 
-    let main_amount =document.getElementById("main-amount").innerText
-    let main_amount_f =parseFloat(main_amount)
+    // let main_amount =document.getElementById("main-amount").innerText
+    let main_amount_f =getTextFieldValueById("main-amount")
 
-    let th_input=document.getElementById("th-input").value
+    // let th_input=document.getElementById("th-input").value
 
-    let th_input_N =parseFloat(th_input)
+    let th_input_N =getInputFieldValueById("th-input")
 
-    let th_donate=document.getElementById("th-donate").innerText
+    // let th_donate=document.getElementById("th-donate").innerText
 
-    let th_donate_N=parseFloat(th_donate)
+    let th_donate_N=getTextFieldValueById("th-donate")
 
     if(th_input_N <=0 || isNaN(th_input_N)){
 
