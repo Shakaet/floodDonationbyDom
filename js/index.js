@@ -22,13 +22,27 @@ document.getElementById("first-btn").addEventListener("click",function(){
         return
     }
 
-    let sum_f= first_input_N+first_donate_N
+
+    if(main_amount_f>=first_input_N){
+
+
+        let sum_f= first_input_N+first_donate_N
 
     document.getElementById("first-donate").innerText=sum_f
 
     let new_main_amount= main_amount_f-sum_f
 
     document.getElementById("main-amount").innerText=new_main_amount
+
+
+    document.getElementById("confirmationModal").classList.remove("hidden")
+
+    }
+    else{
+        alert("you have no sufficient balanced for donate")
+    }
+
+    
 
 
 
@@ -62,13 +76,26 @@ document.getElementById("sec-btn").addEventListener("click",function(){
         return
     }
 
-    let sum_f_2= sec_input_N+sec_donate_N
 
-    document.getElementById("sec-donate").innerText=sum_f_2
+    if(main_amount_f>=sec_input_N){
 
-    let new_main_amount_2= main_amount_f-sum_f_2
 
-    document.getElementById("main-amount").innerText=new_main_amount_2
+        let sum_f_2= sec_input_N+sec_donate_N
+
+        document.getElementById("sec-donate").innerText=sum_f_2
+    
+        let new_main_amount_2= main_amount_f-sum_f_2
+    
+        document.getElementById("main-amount").innerText=new_main_amount_2
+    
+        document.getElementById("confirmationModal").classList.remove("hidden")
+
+    }
+    else{
+        alert("you have no sufficient balanced for donate")
+    }
+
+    
 
 
 
@@ -102,17 +129,36 @@ document.getElementById("th-btn").addEventListener("click",function(){
         return
     }
 
-    let sum_f_3= th_input_N+th_donate_N
+    if(main_amount_f>=th_input_N){
 
-    document.getElementById("th-donate").innerText=sum_f_3
 
-    let new_main_amount_3= main_amount_f-sum_f_3
+        let sum_f_3= th_input_N+th_donate_N
 
-    document.getElementById("main-amount").innerText=new_main_amount_3
+        document.getElementById("th-donate").innerText=sum_f_3
+    
+        let new_main_amount_3= main_amount_f-sum_f_3
+    
+        document.getElementById("main-amount").innerText=new_main_amount_3
+    
+        document.getElementById("confirmationModal").classList.remove("hidden")
+
+    }
+    else{
+        alert("you have no sufficient balanced for donate")
+    }
+
+
 
 
 
     
+
+
+})
+
+document.getElementById("closeModalBtn").addEventListener("click",function(){
+
+    document.getElementById("confirmationModal").classList.add("hidden")
 
 
 })
