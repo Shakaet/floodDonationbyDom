@@ -34,6 +34,27 @@ document.getElementById("first-btn").addEventListener("click",function(){
 
     document.getElementById("main-amount").innerText=new_main_amount
 
+     let title1=document.getElementById("title1").innerText
+
+    let div=document.createElement("div")
+
+    div.classList.add("max-w-5xl", "mx-auto", "bg-white", "shadow-md", "rounded-lg","overflow-hidden","border-5","p-5","mt-3")
+
+    div.innerHTML =`
+
+    <h3 class="text-bold"> ${sum_f} ${title1} <h3>
+
+    <p class="text-xs">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
+
+
+
+    
+    
+    
+    
+    `
+    document.getElementById("history").appendChild(div)
+
 
     document.getElementById("confirmationModal").classList.remove("hidden")
 
@@ -41,6 +62,11 @@ document.getElementById("first-btn").addEventListener("click",function(){
     else{
         alert("you have no sufficient balanced for donate")
     }
+
+
+
+
+
 
     
 
@@ -87,6 +113,33 @@ document.getElementById("sec-btn").addEventListener("click",function(){
         let new_main_amount_2= main_amount_f-sum_f_2
     
         document.getElementById("main-amount").innerText=new_main_amount_2
+
+
+        let title2=document.getElementById("title2").innerText
+
+    let div=document.createElement("div")
+
+    div.classList.add("max-w-5xl", "mx-auto", "bg-white", "shadow-md", "rounded-lg","overflow-hidden","border-5","p-5","mt-3")
+
+    div.innerHTML =`
+
+    <h3 class="text-bold"> ${sum_f_2} ${title2} <h3>
+
+    <p class="text-xs">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
+
+
+
+    
+    
+    
+    
+    `
+    document.getElementById("history").appendChild(div)
+
+        
+
+
+        
     
         document.getElementById("confirmationModal").classList.remove("hidden")
 
@@ -139,6 +192,30 @@ document.getElementById("th-btn").addEventListener("click",function(){
         let new_main_amount_3= main_amount_f-sum_f_3
     
         document.getElementById("main-amount").innerText=new_main_amount_3
+
+        let title3=document.getElementById("title3").innerText
+
+    let div=document.createElement("div")
+
+    div.classList.add("max-w-5xl", "mx-auto", "bg-white", "shadow-md", "rounded-lg","overflow-hidden","border-5","p-5","mt-3")
+
+    div.innerHTML =`
+
+    <h3 class="text-bold"> ${sum_f_3} ${title3} <h3>
+
+    <p class="text-xs">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
+
+
+
+    
+    
+    
+    
+    `
+    document.getElementById("history").appendChild(div)
+
+
+        
     
         document.getElementById("confirmationModal").classList.remove("hidden")
 
@@ -159,6 +236,27 @@ document.getElementById("th-btn").addEventListener("click",function(){
 document.getElementById("closeModalBtn").addEventListener("click",function(){
 
     document.getElementById("confirmationModal").classList.add("hidden")
+
+
+})
+
+
+
+document.getElementById("history-tab").addEventListener("click",function(){
+
+    document.getElementById("history-tab").classList.add("bg-[#B4F461]")
+    document.getElementById("history").classList.remove("hidden")
+    document.getElementById("donate").classList.add("hidden")
+    document.getElementById("donation-tab").classList.remove("bg-[#B4F461]")
+})
+
+document.getElementById("donation-tab").addEventListener("click",function(){
+    
+
+    document.getElementById("donation-tab").classList.add("bg-[#B4F461]")
+    document.getElementById("history").classList.add("hidden")
+    document.getElementById("donate").classList.remove("hidden")
+    document.getElementById("history-tab").classList.remove("bg-[#B4F461]")
 
 
 })
