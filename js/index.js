@@ -42,9 +42,9 @@ document.getElementById("first-btn").addEventListener("click",function(){
 
     div.innerHTML =`
 
-    <h3 class="text-bold"> ${sum_f} ${title1} <h3>
+    <h3 class="text-2xl font-bold"> ${sum_f} ${title1} <h3>
 
-    <p class="text-xs">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
+    <p class="text-xl mt-5">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
 
 
 
@@ -123,9 +123,9 @@ document.getElementById("sec-btn").addEventListener("click",function(){
 
     div.innerHTML =`
 
-    <h3 class="text-bold"> ${sum_f_2} ${title2} <h3>
+    <h3 class="text-2xl font-bold"> ${sum_f_2} ${title2} <h3>
 
-    <p class="text-xs">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
+    <p class="text-xl mt-5">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
 
 
 
@@ -201,9 +201,9 @@ document.getElementById("th-btn").addEventListener("click",function(){
 
     div.innerHTML =`
 
-    <h3 class="text-bold"> ${sum_f_3} ${title3} <h3>
+    <h3 class="text-2xl font-bold"> ${sum_f_3} ${title3} <h3>
 
-    <p class="text-xs">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
+    <p class="text-xl mt-5">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
 
 
 
@@ -259,4 +259,10 @@ document.getElementById("donation-tab").addEventListener("click",function(){
     document.getElementById("history-tab").classList.remove("bg-[#B4F461]")
 
 
+})
+
+
+document.getElementById("blog").addEventListener("click",function(){
+
+    window.location.href="./home.html"
 })
